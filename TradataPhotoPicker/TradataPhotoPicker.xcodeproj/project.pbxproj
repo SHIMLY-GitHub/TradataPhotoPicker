@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD45B59B214CA1060015BA78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B59A214CA1060015BA78 /* AppDelegate.swift */; };
+		BD45B59D214CA1060015BA78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B59C214CA1060015BA78 /* ViewController.swift */; };
+		BD45B5A0214CA1060015BA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD45B59E214CA1060015BA78 /* Main.storyboard */; };
+		BD45B5A2214CA1070015BA78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD45B5A1214CA1070015BA78 /* Assets.xcassets */; };
+		BD45B5A5214CA1070015BA78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD45B5A3214CA1070015BA78 /* LaunchScreen.storyboard */; };
+		BD45B5B0214CA1070015BA78 /* TradataPhotoPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B5AF214CA1070015BA78 /* TradataPhotoPickerTests.swift */; };
+		BD45B5BB214CA1070015BA78 /* TradataPhotoPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B5BA214CA1070015BA78 /* TradataPhotoPickerUITests.swift */; };
+		BD45B5CC214CA3CE0015BA78 /* TradataPhotoPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B5CB214CA3CE0015BA78 /* TradataPhotoPickerController.swift */; };
+		BD45B5CE214CA8970015BA78 /* TradataPhotoPickerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B5CD214CA8970015BA78 /* TradataPhotoPickerProtocol.swift */; };
+		BD45B5D0214CD4E00015BA78 /* TradataPhotoPickerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B5CF214CD4E00015BA78 /* TradataPhotoPickerExtension.swift */; };
+		BD45B5D6214E18900015BA78 /* TradataPhotoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B5D5214E18900015BA78 /* TradataPhotoCollectionCell.swift */; };
+		BD45B5D8214E1D840015BA78 /* TradataPhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD45B5D7214E1D840015BA78 /* TradataPhotoManager.swift */; };
+		BD45B5DE214E7A960015BA78 /* TradataPhotoBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD45B5DD214E7A960015BA78 /* TradataPhotoBundle.bundle */; };
+		BDF58F1B214E826A002B3512 /* Bundle+Tradata.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF58F1A214E826A002B3512 /* Bundle+Tradata.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD45B5AC214CA1070015BA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD45B58F214CA1060015BA78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD45B596214CA1060015BA78;
+			remoteInfo = TradataPhotoPicker;
+		};
+		BD45B5B7214CA1070015BA78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD45B58F214CA1060015BA78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD45B596214CA1060015BA78;
+			remoteInfo = TradataPhotoPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD45B597214CA1060015BA78 /* TradataPhotoPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradataPhotoPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD45B59A214CA1060015BA78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BD45B59C214CA1060015BA78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD45B59F214CA1060015BA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD45B5A1214CA1070015BA78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD45B5A4214CA1070015BA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD45B5A6214CA1070015BA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD45B5AB214CA1070015BA78 /* TradataPhotoPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradataPhotoPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD45B5AF214CA1070015BA78 /* TradataPhotoPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradataPhotoPickerTests.swift; sourceTree = "<group>"; };
+		BD45B5B1214CA1070015BA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD45B5B6214CA1070015BA78 /* TradataPhotoPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradataPhotoPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD45B5BA214CA1070015BA78 /* TradataPhotoPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradataPhotoPickerUITests.swift; sourceTree = "<group>"; };
+		BD45B5BC214CA1070015BA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD45B5CB214CA3CE0015BA78 /* TradataPhotoPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradataPhotoPickerController.swift; sourceTree = "<group>"; };
+		BD45B5CD214CA8970015BA78 /* TradataPhotoPickerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradataPhotoPickerProtocol.swift; sourceTree = "<group>"; };
+		BD45B5CF214CD4E00015BA78 /* TradataPhotoPickerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradataPhotoPickerExtension.swift; sourceTree = "<group>"; };
+		BD45B5D5214E18900015BA78 /* TradataPhotoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradataPhotoCollectionCell.swift; sourceTree = "<group>"; };
+		BD45B5D7214E1D840015BA78 /* TradataPhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradataPhotoManager.swift; sourceTree = "<group>"; };
+		BD45B5D9214E20730015BA78 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		BD45B5DA214E20730015BA78 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BD45B5DD214E7A960015BA78 /* TradataPhotoBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TradataPhotoBundle.bundle; sourceTree = "<group>"; };
+		BDF58F1A214E826A002B3512 /* Bundle+Tradata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Tradata.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD45B594214CA1060015BA78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD45B5A8214CA1070015BA78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD45B5B3214CA1070015BA78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD45B58E214CA1060015BA78 = {
+			isa = PBXGroup;
+			children = (
+				BD45B599214CA1060015BA78 /* TradataPhotoPicker */,
+				BD45B5AE214CA1070015BA78 /* TradataPhotoPickerTests */,
+				BD45B5B9214CA1070015BA78 /* TradataPhotoPickerUITests */,
+				BD45B598214CA1060015BA78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD45B598214CA1060015BA78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD45B597214CA1060015BA78 /* TradataPhotoPicker.app */,
+				BD45B5AB214CA1070015BA78 /* TradataPhotoPickerTests.xctest */,
+				BD45B5B6214CA1070015BA78 /* TradataPhotoPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD45B599214CA1060015BA78 /* TradataPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				BD45B5C8214CA12B0015BA78 /* Source */,
+				BD45B59A214CA1060015BA78 /* AppDelegate.swift */,
+				BD45B59C214CA1060015BA78 /* ViewController.swift */,
+				BD45B59E214CA1060015BA78 /* Main.storyboard */,
+				BD45B5A1214CA1070015BA78 /* Assets.xcassets */,
+				BD45B5A3214CA1070015BA78 /* LaunchScreen.storyboard */,
+				BD45B5A6214CA1070015BA78 /* Info.plist */,
+			);
+			path = TradataPhotoPicker;
+			sourceTree = "<group>";
+		};
+		BD45B5AE214CA1070015BA78 /* TradataPhotoPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD45B5AF214CA1070015BA78 /* TradataPhotoPickerTests.swift */,
+				BD45B5B1214CA1070015BA78 /* Info.plist */,
+			);
+			path = TradataPhotoPickerTests;
+			sourceTree = "<group>";
+		};
+		BD45B5B9214CA1070015BA78 /* TradataPhotoPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD45B5BA214CA1070015BA78 /* TradataPhotoPickerUITests.swift */,
+				BD45B5BC214CA1070015BA78 /* Info.plist */,
+			);
+			path = TradataPhotoPickerUITests;
+			sourceTree = "<group>";
+		};
+		BD45B5C8214CA12B0015BA78 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BDF58F1A214E826A002B3512 /* Bundle+Tradata.swift */,
+				BD45B5CB214CA3CE0015BA78 /* TradataPhotoPickerController.swift */,
+				BD45B5CD214CA8970015BA78 /* TradataPhotoPickerProtocol.swift */,
+				BD45B5CF214CD4E00015BA78 /* TradataPhotoPickerExtension.swift */,
+				BD45B5D5214E18900015BA78 /* TradataPhotoCollectionCell.swift */,
+				BD45B5D7214E1D840015BA78 /* TradataPhotoManager.swift */,
+				BD45B5DD214E7A960015BA78 /* TradataPhotoBundle.bundle */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD45B596214CA1060015BA78 /* TradataPhotoPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD45B5BF214CA1070015BA78 /* Build configuration list for PBXNativeTarget "TradataPhotoPicker" */;
+			buildPhases = (
+				BD45B593214CA1060015BA78 /* Sources */,
+				BD45B594214CA1060015BA78 /* Frameworks */,
+				BD45B595214CA1060015BA78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradataPhotoPicker;
+			productName = TradataPhotoPicker;
+			productReference = BD45B597214CA1060015BA78 /* TradataPhotoPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD45B5AA214CA1070015BA78 /* TradataPhotoPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD45B5C2214CA1070015BA78 /* Build configuration list for PBXNativeTarget "TradataPhotoPickerTests" */;
+			buildPhases = (
+				BD45B5A7214CA1070015BA78 /* Sources */,
+				BD45B5A8214CA1070015BA78 /* Frameworks */,
+				BD45B5A9214CA1070015BA78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD45B5AD214CA1070015BA78 /* PBXTargetDependency */,
+			);
+			name = TradataPhotoPickerTests;
+			productName = TradataPhotoPickerTests;
+			productReference = BD45B5AB214CA1070015BA78 /* TradataPhotoPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD45B5B5214CA1070015BA78 /* TradataPhotoPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD45B5C5214CA1070015BA78 /* Build configuration list for PBXNativeTarget "TradataPhotoPickerUITests" */;
+			buildPhases = (
+				BD45B5B2214CA1070015BA78 /* Sources */,
+				BD45B5B3214CA1070015BA78 /* Frameworks */,
+				BD45B5B4214CA1070015BA78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD45B5B8214CA1070015BA78 /* PBXTargetDependency */,
+			);
+			name = TradataPhotoPickerUITests;
+			productName = TradataPhotoPickerUITests;
+			productReference = BD45B5B6214CA1070015BA78 /* TradataPhotoPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD45B58F214CA1060015BA78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = djy;
+				TargetAttributes = {
+					BD45B596214CA1060015BA78 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					BD45B5AA214CA1070015BA78 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BD45B596214CA1060015BA78;
+					};
+					BD45B5B5214CA1070015BA78 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BD45B596214CA1060015BA78;
+					};
+				};
+			};
+			buildConfigurationList = BD45B592214CA1060015BA78 /* Build configuration list for PBXProject "TradataPhotoPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD45B58E214CA1060015BA78;
+			productRefGroup = BD45B598214CA1060015BA78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD45B596214CA1060015BA78 /* TradataPhotoPicker */,
+				BD45B5AA214CA1070015BA78 /* TradataPhotoPickerTests */,
+				BD45B5B5214CA1070015BA78 /* TradataPhotoPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD45B595214CA1060015BA78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD45B5DE214E7A960015BA78 /* TradataPhotoBundle.bundle in Resources */,
+				BD45B5A5214CA1070015BA78 /* LaunchScreen.storyboard in Resources */,
+				BD45B5A2214CA1070015BA78 /* Assets.xcassets in Resources */,
+				BD45B5A0214CA1060015BA78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD45B5A9214CA1070015BA78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD45B5B4214CA1070015BA78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD45B593214CA1060015BA78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD45B5D6214E18900015BA78 /* TradataPhotoCollectionCell.swift in Sources */,
+				BD45B5CE214CA8970015BA78 /* TradataPhotoPickerProtocol.swift in Sources */,
+				BD45B59D214CA1060015BA78 /* ViewController.swift in Sources */,
+				BD45B5D0214CD4E00015BA78 /* TradataPhotoPickerExtension.swift in Sources */,
+				BD45B5D8214E1D840015BA78 /* TradataPhotoManager.swift in Sources */,
+				BDF58F1B214E826A002B3512 /* Bundle+Tradata.swift in Sources */,
+				BD45B59B214CA1060015BA78 /* AppDelegate.swift in Sources */,
+				BD45B5CC214CA3CE0015BA78 /* TradataPhotoPickerController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD45B5A7214CA1070015BA78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD45B5B0214CA1070015BA78 /* TradataPhotoPickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD45B5B2214CA1070015BA78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD45B5BB214CA1070015BA78 /* TradataPhotoPickerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD45B5AD214CA1070015BA78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD45B596214CA1060015BA78 /* TradataPhotoPicker */;
+			targetProxy = BD45B5AC214CA1070015BA78 /* PBXContainerItemProxy */;
+		};
+		BD45B5B8214CA1070015BA78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD45B596214CA1060015BA78 /* TradataPhotoPicker */;
+			targetProxy = BD45B5B7214CA1070015BA78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD45B59E214CA1060015BA78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD45B59F214CA1060015BA78 /* Base */,
+				BD45B5D9214E20730015BA78 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD45B5A3214CA1070015BA78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD45B5A4214CA1070015BA78 /* Base */,
+				BD45B5DA214E20730015BA78 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BD45B5BD214CA1070015BA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD45B5BE214CA1070015BA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD45B5C0214CA1070015BA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3ATYAJ48Q;
+				INFOPLIST_FILE = TradataPhotoPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayi.cameraTest.TradataPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD45B5C1214CA1070015BA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3ATYAJ48Q;
+				INFOPLIST_FILE = TradataPhotoPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayi.cameraTest.TradataPhotoPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD45B5C3214CA1070015BA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3ATYAJ48Q;
+				INFOPLIST_FILE = TradataPhotoPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayi.cameraTest.TradataPhotoPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradataPhotoPicker.app/TradataPhotoPicker";
+			};
+			name = Debug;
+		};
+		BD45B5C4214CA1070015BA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3ATYAJ48Q;
+				INFOPLIST_FILE = TradataPhotoPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayi.cameraTest.TradataPhotoPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradataPhotoPicker.app/TradataPhotoPicker";
+			};
+			name = Release;
+		};
+		BD45B5C6214CA1070015BA78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3ATYAJ48Q;
+				INFOPLIST_FILE = TradataPhotoPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayi.cameraTest.TradataPhotoPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradataPhotoPicker;
+			};
+			name = Debug;
+		};
+		BD45B5C7214CA1070015BA78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3ATYAJ48Q;
+				INFOPLIST_FILE = TradataPhotoPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayi.cameraTest.TradataPhotoPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradataPhotoPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD45B592214CA1060015BA78 /* Build configuration list for PBXProject "TradataPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45B5BD214CA1070015BA78 /* Debug */,
+				BD45B5BE214CA1070015BA78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD45B5BF214CA1070015BA78 /* Build configuration list for PBXNativeTarget "TradataPhotoPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45B5C0214CA1070015BA78 /* Debug */,
+				BD45B5C1214CA1070015BA78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD45B5C2214CA1070015BA78 /* Build configuration list for PBXNativeTarget "TradataPhotoPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45B5C3214CA1070015BA78 /* Debug */,
+				BD45B5C4214CA1070015BA78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD45B5C5214CA1070015BA78 /* Build configuration list for PBXNativeTarget "TradataPhotoPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45B5C6214CA1070015BA78 /* Debug */,
+				BD45B5C7214CA1070015BA78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD45B58F214CA1060015BA78 /* Project object */;
+}
