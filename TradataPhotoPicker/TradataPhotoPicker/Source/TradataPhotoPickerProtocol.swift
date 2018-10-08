@@ -29,15 +29,15 @@ enum TradataPosition {
     case top
 }
 
- struct TradataMediaType: OptionSet {
+public enum TradataMediaItem {
+    case image
+
+    case video
     
-    let rawValue: Int
-    
-    static let image = TradataMediaType(rawValue: 1)
-    
-    static let video = TradataMediaType(rawValue: 2)
-   
 }
+
+public typealias TradataMediaType = [TradataMediaItem]
+
 
 protocol TradataPhotoProtocol {
     
@@ -72,7 +72,7 @@ extension TradataPhotoProtocol{
      /// 可以选择的图片类型
      var tradataMediaType:TradataMediaType {
         
-         return [TradataMediaType.image,TradataMediaType.video]
+         return [.image,.video]
     }
     
 }

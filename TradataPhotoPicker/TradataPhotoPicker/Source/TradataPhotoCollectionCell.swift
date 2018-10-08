@@ -8,6 +8,12 @@
 
 import UIKit
 
+protocol TradataPhotoCollectionProtocol{
+    
+}
+
+
+
 class TradataPhotoCollectionCell: UICollectionViewCell {
     
     var imageView:UIImageView = UIImageView()
