@@ -10,8 +10,6 @@ import Foundation
 import UIKit
 extension Bundle {
     
-    
-    
     static var TradataBundle: Bundle{
         return Bundle.init(path:Bundle.init(for: TradataPhotoPickerController.self).path(forResource: "TradataPhotoBundle", ofType: "bundle")!)!
     }

@@ -126,11 +126,10 @@ class TradataPhotoManager {
     
     
     //MARK:获取缩略图
-    public  func libraryThumbnail(index:Int,assetsFetch:PHFetchResult<PHAsset>,thumbSize:CGSize,result:@escaping(_ image:UIImage,_ asset:PHAsset)->()) -> Void {
+    public  func libraryThumbnail(asset:PHAsset,thumbSize:CGSize,result:@escaping(_ image:UIImage,_ asset:PHAsset)->()) -> Void {
         
         let retainScale = UIScreen.main.scale
         let size =  CGSize(width: thumbSize.width * retainScale, height: thumbSize.height * retainScale)
-        let asset = assetsFetch[index]
         
         self.imageManager.requestImage(for: asset, targetSize: size, contentMode: .aspectFill, options: thumbOption) { (image, info) in
             

@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import Photos
 class TradataPhotoCollectionCell: UICollectionViewCell {
     
     var imageView:UIImageView = UIImageView()
     
     var selectButton:UIButton = UIButton()
+    
+    var assetIdentifier:String!
+    
+    var asset:PHAsset!{
+        willSet{
+              self.assetIdentifier = newValue?.localIdentifier
+        }
+    }
     
     
     override init(frame: CGRect) {
@@ -24,7 +32,6 @@ class TradataPhotoCollectionCell: UICollectionViewCell {
         self.addSubview(imageView)
         
         selectButton.frame = CGRect(x: self.bounds.size.width-10, y: self.bounds.size.height-10, width: 30, height: 30)
-        
         
         
         self.addSubview(selectButton)

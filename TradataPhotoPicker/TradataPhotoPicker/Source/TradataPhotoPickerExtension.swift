@@ -15,7 +15,7 @@ extension TradataPhotoPickerController{
         let layout = UICollectionViewFlowLayout()
         
         
-        layout.itemSize = CGSize(width: itemWidth, height: itemWidth)
+        layout.itemSize = itemSize;
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
         

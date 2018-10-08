@@ -11,7 +11,8 @@ import UIKit
 class TradataPhotoPickerController: UIViewController {
     
 
-    let itemWidth = (UIScreen.main.bounds.size.width-3) / 4.0
+
+    let itemSize = CGSize(width:(UIScreen.main.bounds.size.width-3) / 4.0 , height: (UIScreen.main.bounds.size.width-3) / 4.0)
     
     var tradataNavProtocol:TradataNavProtocol?
     
@@ -65,11 +66,16 @@ extension TradataPhotoPickerController:UICollectionViewDataSource,UICollectionVi
         
         let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TradataPhotoCollectionCell", for: indexPath) as! TradataPhotoCollectionCell
         
-  
-        tdManager.libraryThumbnail(index: indexPath.row, assetsFetch: (tdFetchResult?.phFetchResult)!, thumbSize: CGSize(width: itemWidth, height: itemWidth)) { (image, asset) in
-       
-            cell.imageView.image = image
+        let asset = tdFetchResult?.phFetchResult[indexPath.row]
+        
+        cell.asset = asset
+        
+        tdManager.libraryThumbnail(asset: asset!, thumbSize: itemSize) { (image, asset) in
             
+            if (cell.assetIdentifier == asset.localIdentifier){
+                
+                cell.imageView.image = image
+            }
         }
     
         return  cell
