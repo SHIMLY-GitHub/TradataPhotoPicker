@@ -47,12 +47,13 @@ class TradataPhotoManager {
                  ascending = photoProtocol?.tradataPhotoSort == TradataPhotoSort.inverted ? false : true
             }
             
-            if (photoProtocol?.tradataMediaType.contains(TradataMediaType.image))!{
+
+            if (photoProtocol?.tradataMediaType.contains(.image))!{
                 self.isContainImage = true
             }else{
                 self.isContainImage = false
             }
-            if (photoProtocol?.tradataMediaType.contains(TradataMediaType.video))!{
+            if (photoProtocol?.tradataMediaType.contains(.video))!{
                 self.isContainVideo = true
             }else{
                  self.isContainVideo = false
@@ -80,13 +81,13 @@ class TradataPhotoManager {
     //MARK:系统智能相册
     private var smart:PHFetchResult<AnyObject>!{
         
-        return PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: PHFetchOptions()) as! PHFetchResult<AnyObject>
+        return PHAssetCollection.fetchAssetCollections(with: .smartAlbum, subtype: .albumRegular, options: PHFetchOptions()) as? PHFetchResult<AnyObject>
     }
     
     //MARK:用户自定义相册
     private var userCustom:PHFetchResult<AnyObject>!{
         
-        return PHCollection.fetchTopLevelUserCollections(with: nil) as! PHFetchResult<AnyObject>
+        return PHCollection.fetchTopLevelUserCollections(with: nil) as? PHFetchResult<AnyObject>
     }
     
     private func managerResult(collection:PHFetchResult<AnyObject>) ->Void{
